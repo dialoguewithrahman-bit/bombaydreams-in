@@ -34,7 +34,7 @@ export default function Footer() {
               Bombay Dreams
             </p>
             <p style={{ fontSize: "13px", color: "#888880", lineHeight: 1.6 }}>
-              Bombay · Est. 2025
+              Bombay · Est. 2017
             </p>
             <p
               style={{
@@ -104,10 +104,16 @@ export default function Footer() {
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               <p style={{ fontSize: "14px", color: "#888880" }}>Bombay, India</p>
               <div style={{ display: "flex", gap: "16px", marginTop: "8px" }}>
-                {["Instagram", "LinkedIn", "X"].map((platform) => (
+                {[
+                  { label: "Instagram", href: "https://www.instagram.com/ourbombaydreams/" },
+                  { label: "LinkedIn", href: "https://www.linkedin.com/company/our-bombay-dreams/" },
+                  { label: "X", href: "https://x.com/ourbombaydreams" },
+                ].map((platform) => (
                   <a
-                    key={platform}
-                    href="#"
+                    key={platform.label}
+                    href={platform.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       fontSize: "12px",
                       letterSpacing: "0.06em",
@@ -118,7 +124,7 @@ export default function Footer() {
                     onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#c9a84c")}
                     onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#888880")}
                   >
-                    {platform}
+                    {platform.label}
                   </a>
                 ))}
               </div>

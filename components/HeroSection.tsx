@@ -38,7 +38,7 @@ export default function HeroSection() {
             alt={slide.alt}
             fill
             priority={i === 0}
-            style={{ objectFit: "cover", objectPosition: "center top" }}
+            style={{ objectFit: "contain", objectPosition: "center 20%" }}
             sizes="100vw"
           />
         </div>
@@ -121,7 +121,7 @@ export default function HeroSection() {
             onMouseEnter={(e) => ((e.target as HTMLElement).style.opacity = "0.85")}
             onMouseLeave={(e) => ((e.target as HTMLElement).style.opacity = "1")}
           >
-            Apply to roster
+            I&apos;m An Artist
           </a>
           <a
             href="#brands"

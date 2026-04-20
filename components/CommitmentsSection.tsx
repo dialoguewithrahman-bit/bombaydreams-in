@@ -131,7 +131,7 @@ export default function CommitmentsSection() {
               <div
                 style={{
                   position: "relative",
-                  minHeight: "300px",
+                  minHeight: "420px",
                   order: i % 2 === 0 ? 1 : 0,
                   overflow: "hidden",
                 }}
@@ -140,7 +140,7 @@ export default function CommitmentsSection() {
                   src={c.image}
                   alt={c.title}
                   fill
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain", objectPosition: "center 15%" }}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div

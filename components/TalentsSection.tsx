@@ -67,7 +67,7 @@ export default function TalentsSection() {
               whiteSpace: "nowrap",
             }}
           >
-            View full roster →
+            View complete list →
           </a>
         </div>
 
