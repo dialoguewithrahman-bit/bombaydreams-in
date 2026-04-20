@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import RotatePrompt from "@/components/RotatePrompt";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable}`}>
       <body className="min-h-screen" style={{ background: "#0c0c0c", color: "#f5f0eb" }}>
+        <RotatePrompt />
         {children}
       </body>
     </html>
