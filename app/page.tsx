@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import TickerSection from "@/components/TickerSection";
 import ServicesSection from "@/components/ServicesSection";
 import CommitmentsSection from "@/components/CommitmentsSection";
+import FounderNote from "@/components/FounderNote";
 import TalentsSection from "@/components/TalentsSection";
 import BrandsSection from "@/components/BrandsSection";
 import ApplySection from "@/components/ApplySection";
@@ -17,6 +18,7 @@ export default function Home() {
         <TickerSection />
         <ServicesSection />
         <CommitmentsSection />
+        <FounderNote />
         <TalentsSection />
         <BrandsSection />
         <ApplySection />
